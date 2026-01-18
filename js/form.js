@@ -1,4 +1,4 @@
-const scriptURL="https://script.google.com/macros/s/AKfycbxRlobhlQyS8RhRKoFPAgh6V0pi9BjfazwnrQVzbienBBzy9af2mnG6FTIjTwVspsUq/exec";
+const scriptURL="https://script.google.com/macros/s/AKfycbxDCZzkQR1V3VArEs5Nj8jEXmV-Y8Fz1OnZUY-wM73exmW8VX6s5e-fHwC7X9QREvM/exec";
 const forms=document.querySelectorAll("#contactForm");
 forms.forEach(form=>{
   const msg=form.querySelector("#formMsg");
