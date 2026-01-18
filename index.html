@@ -5,10 +5,19 @@
 <title>RAVS Group | Business Growth Partner</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Extra safety styling */
+#formMsg{
+  margin-top:10px;
+  font-weight:600;
+}
+</style>
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="logo">RAVS Group</div>
   <nav>
@@ -19,90 +28,214 @@
   </nav>
 </header>
 
+<!-- ================= HERO ================= -->
 <section id="home" class="hero">
-  <h1>Complete Business Solutions</h1>
-  <p>From Staffing to IT, Accounting to Digital Marketing — we help businesses scale with confidence.</p>
-  <a href="#contact" class="btn">Get Started</a>
+  <h1>Your Trusted Partner in Business Growth</h1>
+  <p>
+    Delivering comprehensive business solutions that drive success and
+    sustainable growth for organizations worldwide.
+  </p>
+  <a href="#contact" class="btn">Contact Us</a>
 </section>
 
+<!-- ================= ABOUT ================= -->
 <section id="about" class="section grey">
   <h2>About RAVS Group</h2>
 
   <div class="about-grid">
     <div class="about-card">
+      <h3>Your Trusted Partner</h3>
+      <p>
+        For over 2 years, RAVS Group has been delivering business solutions
+        that help organizations grow with confidence.
+      </p>
+    </div>
+
+    <div class="about-card">
       <h3>Our Journey</h3>
-      <p>Started as a staffing provider, now a full-service consulting partner across industries.</p>
+      <p>
+        Started as a staffing provider, we evolved into a full-service
+        consulting group across Staffing, IT, Accounting, Digital Marketing
+        and Learning & Development.
+      </p>
     </div>
+
     <div class="about-card">
-      <h3>What Sets Us Apart</h3>
-      <p>Deep market understanding and tailored business solutions.</p>
-    </div>
-    <div class="about-card">
-      <h3>Our Commitment</h3>
-      <p>We don’t just deliver services — we build long-term partnerships.</p>
+      <h3>Our Approach</h3>
+      <p>
+        We understand market dynamics and build customized solutions.
+        We don’t just provide services — we build partnerships.
+      </p>
     </div>
   </div>
 
   <div class="mv-grid">
     <div class="mv-card">
       <h3>Our Mission</h3>
-      <p>Empowering businesses with reliable and cost-effective solutions.</p>
+      <p>
+        To empower businesses with innovative, reliable and cost-effective
+        solutions that drive sustainable growth.
+      </p>
     </div>
+
     <div class="mv-card">
       <h3>Our Vision</h3>
-      <p>To be the most trusted partner for business transformation.</p>
+      <p>
+        To be the most trusted global partner for business transformation,
+        recognized for quality and client success.
+      </p>
     </div>
   </div>
 
   <h3 class="sub-heading">Our Core Values</h3>
   <div class="values-grid">
-    <div class="value-card"><h4>Integrity</h4><p>Highest ethical standards.</p></div>
-    <div class="value-card"><h4>Excellence</h4><p>Consistent quality delivery.</p></div>
-    <div class="value-card"><h4>Collaboration</h4><p>Partnership-driven growth.</p></div>
-    <div class="value-card"><h4>Innovation</h4><p>Future-ready solutions.</p></div>
+    <div class="value-card">
+      <h4>Integrity</h4>
+      <p>We uphold the highest ethical standards.</p>
+    </div>
+    <div class="value-card">
+      <h4>Excellence</h4>
+      <p>We strive for exceptional quality in everything.</p>
+    </div>
+    <div class="value-card">
+      <h4>Collaboration</h4>
+      <p>We believe in the power of partnership.</p>
+    </div>
+    <div class="value-card">
+      <h4>Innovation</h4>
+      <p>We embrace change and future-ready solutions.</p>
+    </div>
   </div>
 </section>
 
+<!-- ================= SERVICES ================= -->
 <section id="services" class="section">
   <h2>Our Services</h2>
+
   <div class="service-grid">
-    <div class="service-card"><h3>Staffing Solutions</h3><p>Talent sourcing & workforce deployment.</p></div>
-    <div class="service-card"><h3>IT Solutions</h3><p>Software, cloud & cybersecurity services.</p></div>
-    <div class="service-card"><h3>Accounting</h3><p>Bookkeeping, taxation & compliance.</p></div>
-    <div class="service-card"><h3>Digital Marketing</h3><p>SEO, branding & performance marketing.</p></div>
-    <div class="service-card"><h3>Learning & Development</h3><p>Corporate training & upskilling.</p></div>
+    <div class="service-card">
+      <div class="service-icon">👥</div>
+      <h3>Staffing Solutions</h3>
+      <p>End-to-end recruitment & workforce deployment.</p>
+      <a href="#contact" class="btn-outline">Know More</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💻</div>
+      <h3>IT Solutions</h3>
+      <p>Software, cloud & managed IT services.</p>
+      <a href="#contact" class="btn-outline">Know More</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <h3>Accounting</h3>
+      <p>Bookkeeping, taxation & compliance services.</p>
+      <a href="#contact" class="btn-outline">Know More</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📢</div>
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media & performance marketing.</p>
+      <a href="#contact" class="btn-outline">Know More</a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎓</div>
+      <h3>Learning & Development</h3>
+      <p>Corporate training & workforce upskilling.</p>
+      <a href="#contact" class="btn-outline">Know More</a>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section grey">
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
   <h2>Get in Touch</h2>
+
   <form id="contactForm" class="contact-form">
-    <input name="name" placeholder="Your Name" required>
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="phone" placeholder="Phone">
-    <textarea name="message" placeholder="Message" required></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number">
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Submit</button>
     <p id="formMsg"></p>
   </form>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="footer-grid">
-    <div><h4>RAVS Group</h4><p>Complete business solutions.</p></div>
-    <div><h4>Contact</h4><p>📞 8126757595</p></div>
-    <div><h4>Location</h4><p>Pan-India Services</p></div>
+    <div>
+      <h4>RAVS Group</h4>
+      <p>Your trusted partner for business growth.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li>Staffing</li>
+        <li>IT</li>
+        <li>Accounting</li>
+        <li>Digital Marketing</li>
+        <li>L&D</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>📞 8126757595</p>
+      <p>📧 info@ravsgroup.com</p>
+    </div>
   </div>
   <p class="copyright">© 2026 RAVS Group. All Rights Reserved.</p>
 </footer>
 
-<a href="https://api.whatsapp.com/send?phone=918126757595" class="float whatsapp" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
+<!-- ================= FLOATING ICONS ================= -->
+<a href="https://wa.me/918126757595" class="float whatsapp" target="_blank"></a>
+<a href="https://www.facebook.com/profile.php?id=61555963289834" class="float facebook" target="_blank"></a>
 
-<a href="https://www.facebook.com/profile.php?id=61555963289834" class="float facebook" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg">
-</a>
+<!-- ================= CONTACT FORM SCRIPT ================= -->
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbxP_S2WCzLUz3PXKFX5pXFsARmAONM3simdeaDtOyPFfb0z06-8dd3ShHOry7d5IKL0PA/exec";
 
-<script src="js/form.js"></script>
+const form = document.getElementById("contactForm");
+const msg = document.getElementById("formMsg");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  msg.style.color = "black";
+  msg.innerText = "Submitting...";
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
+
+  fetch(scriptURL,{
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(res => {
+    if(res.status === "success"){
+      msg.style.color = "green";
+      msg.innerText = "Thank you for contacting us. We will connect you shortly.";
+      form.reset();
+      setTimeout(()=>msg.innerText="",5000);
+    } else {
+      throw new Error();
+    }
+  })
+  .catch(()=>{
+    msg.style.color = "red";
+    msg.innerText = "Error submitting form. Please try again.";
+  });
+});
+</script>
+
 </body>
 </html>
