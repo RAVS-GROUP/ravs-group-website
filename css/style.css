@@ -48,7 +48,7 @@ body {
 }
 
 /* ===============================
-   HERO
+   HERO SECTION
 ================================ */
 .hero {
   background: linear-gradient(135deg, #0a2540, #103f6e);
@@ -60,12 +60,14 @@ body {
 .hero h1 {
   font-size: 42px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 18px;
   max-width: 800px;
   margin: auto;
+  opacity: 0.95;
 }
 
 .btn {
@@ -77,10 +79,16 @@ body {
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #e2a700;
+  transform: translateY(-2px);
 }
 
 /* ===============================
-   SECTIONS
+   COMMON SECTIONS
 ================================ */
 .section {
   padding: 80px 50px;
@@ -104,7 +112,7 @@ body {
 }
 
 /* ===============================
-   ABOUT
+   ABOUT SECTION
 ================================ */
 .about-grid {
   display: grid;
@@ -118,8 +126,28 @@ body {
   padding: 35px 25px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.about-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #0a2540;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* ===============================
+   MISSION & VISION
+================================ */
 .mv-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -128,14 +156,20 @@ body {
 }
 
 .mv-card {
-  background: #fff;
+  background: #ffffff;
   padding: 30px;
   border-left: 6px solid #0a2540;
+  border-radius: 8px;
   text-align: left;
 }
 
+.mv-card h3 {
+  color: #0a2540;
+  margin-bottom: 10px;
+}
+
 /* ===============================
-   VALUES
+   CORE VALUES
 ================================ */
 .values-grid {
   display: grid;
@@ -145,10 +179,16 @@ body {
 }
 
 .value-card {
-  background: #fff;
-  padding: 30px;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
   border-top: 5px solid #f4b400;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.value-card h4 {
+  margin-bottom: 10px;
+  color: #0a2540;
 }
 
 /* ===============================
@@ -165,11 +205,47 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
+  text-align: left;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #0a2540;
 }
 
 /* ===============================
-   CONTACT
+   TEAM
+================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+/* ===============================
+   CONTACT FORM
 ================================ */
 .contact-form {
   max-width: 520px;
@@ -178,14 +254,23 @@ body {
   gap: 18px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   padding: 14px;
+  font-size: 14px;
+  border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 120px;
 }
 
 button {
   background: #0a2540;
   color: #fff;
+  border: none;
   cursor: pointer;
 }
 
@@ -207,18 +292,5 @@ button {
 .copyright {
   margin-top: 40px;
   text-align: center;
+  font-size: 13px;
 }
-
-/* ===============================
-   FLOATING ICONS
-================================ */
-.float {
-  position: fixed;
-  bottom: 25px;
-  width: 48px;
-  height: 48px;
-  z-index: 999;
-}
-
-.whatsapp { right: 25px; }
-.facebook { right: 85px; }
