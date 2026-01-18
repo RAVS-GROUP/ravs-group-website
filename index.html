@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>RAVS Group | Complete Business Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#team">Leadership</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact">Get In Touch</a>
   </nav>
 </header>
 
@@ -30,37 +29,47 @@
 <!-- ABOUT -->
 <section id="about" class="section">
   <h2>About RAVS Group</h2>
-  <p>
-    For over 15 years, RAVS Group has been delivering comprehensive business solutions
-    across Staffing, IT, Accounting, Digital Marketing, and Learning & Development.
-  </p>
-
-  <div class="stats">
-    <div><strong>15+</strong><span>Years of Excellence</span></div>
-    <div><strong>500+</strong><span>Happy Clients</span></div>
-    <div><strong>10+</strong><span>Countries Served</span></div>
+  <div class="about-content">
+    <p><strong>Company Overview:</strong> RAVS Group delivers comprehensive business solutions across Staffing, IT, Accounting, Digital Marketing, and Learning & Development for 15+ years.</p>
+    <p><strong>Mission-Driven Narrative:</strong> Our mission is to empower businesses with innovative and reliable services that drive sustainable growth.</p>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section grey">
   <h2>Our Services</h2>
-
   <div class="cards">
-    <div class="card">Staffing Solutions</div>
-    <div class="card">IT Solutions</div>
-    <div class="card">Accounting Services</div>
-    <div class="card">Digital Marketing</div>
-    <div class="card">Learning & Development</div>
+    <div class="card">
+      <h3>Staffing Solutions</h3>
+      <p>Top talent sourcing and workforce deployment for enterprises.</p>
+      <a href="services.html#staffing" class="btn">Know More</a>
+    </div>
+    <div class="card">
+      <h3>IT Solutions</h3>
+      <p>Custom software development, cloud services, cybersecurity & managed IT solutions.</p>
+      <a href="services.html#it" class="btn">Know More</a>
+    </div>
+    <div class="card">
+      <h3>Accounting Services</h3>
+      <p>Comprehensive bookkeeping, taxation & advisory solutions for businesses.</p>
+      <a href="services.html#accounting" class="btn">Know More</a>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>SEO, Social Media, PPC & Branding strategies that maximize online presence.</p>
+      <a href="services.html#marketing" class="btn">Know More</a>
+    </div>
+    <div class="card">
+      <h3>Learning & Development</h3>
+      <p>Corporate training, upskilling & workforce development programs.</p>
+      <a href="services.html#learning" class="btn">Know More</a>
+    </div>
   </div>
-
-  <a href="services.html" class="btn">View All Services</a>
 </section>
 
 <!-- TEAM -->
 <section id="team" class="section">
   <h2>Leadership Team</h2>
-
   <div class="cards">
     <div class="card">Shivam Sohaney<br><small>Finance Head</small></div>
     <div class="card">Navneet Kumar<br><small>IT Head</small></div>
@@ -73,7 +82,6 @@
 <!-- CONTACT -->
 <section id="contact" class="section grey">
   <h2>Get In Touch</h2>
-
   <form id="contactForm">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Email Address" required>
@@ -89,15 +97,30 @@
     <textarea name="message" placeholder="Your Message"></textarea>
     <button type="submit">Submit Inquiry</button>
   </form>
-
   <p id="formMsg"></p>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 RAVS Group. All rights reserved.</p>
-  <p>WhatsApp: +91 81267 57595 | Pan-India Services</p>
+  <div class="footer-content">
+    <p><strong>RAVS Group:</strong> Comprehensive business solutions across Staffing, IT, Accounting, Digital Marketing, L&D.</p>
+    <p><strong>Services:</strong> Staffing | IT | Accounting | Digital Marketing | Learning & Development</p>
+    <p><strong>Contact:</strong> WhatsApp: +91 8126757595 | Facebook: <a href="https://www.facebook.com/profile.php?id=61555963289834" target="_blank">Visit Page</a></p>
+    <p>© 2026 RAVS Group. All rights reserved.</p>
+  </div>
 </footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab whatsapp">
+  <a href="https://api.whatsapp.com/send?phone=918126757595" target="_blank">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+  </a>
+</div>
+<div class="fab facebook">
+  <a href="https://www.facebook.com/profile.php?id=61555963289834" target="_blank">
+    <img src="images/facebook.png" alt="Facebook">
+  </a>
+</div>
 
 <script src="js/form.js"></script>
 </body>
