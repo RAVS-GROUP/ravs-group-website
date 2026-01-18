@@ -1,153 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  line-height: 1.6;
-  color: #222;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #0a2540;
-  color: #fff;
-}
-
-.header a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #0a2540, #103f6e);
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 18px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  background: #f4b400;
-  color: #000;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.grey {
-  background: #f5f7fa;
-}
-
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.stats div strong {
-  font-size: 28px;
-  display: block;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  font-weight: 600;
-}
-
-.card small {
-  display: block;
-  margin-top: 5px;
-  color: #555;
-  font-weight: normal;
-}
-
-form {
-  max-width: 600px;
-  margin: auto;
-  display: grid;
-  gap: 15px;
-}
-
-input, select, textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-}
-
-textarea {
-  min-height: 100px;
-}
-
-button {
-  padding: 12px;
-  background: #0a2540;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #103f6e;
-}
-
-.footer {
-  background: #0a2540;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-#formMsg {
-  margin-top: 15px;
-  font-weight: bold;
-}
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+body { line-height:1.6; color:#222; }
+.header { position:sticky; top:0; z-index:1000; display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background:#0a2540; color:#fff; }
+.header a { color:#fff; margin-left:20px; text-decoration:none; font-weight:500; }
+.logo { font-size:22px; font-weight:bold; }
+.hero { padding:80px 20px; text-align:center; background:linear-gradient(135deg,#0a2540,#103f6e); color:#fff; }
+.hero h1 { font-size:36px; margin-bottom:15px; }
+.hero p { max-width:800px; margin:auto; font-size:18px; }
+.btn { display:inline-block; margin-top:20px; padding:12px 30px; background:#f4b400; color:#000; text-decoration:none; border-radius:4px; font-weight:bold; }
+.section { padding:60px 40px; text-align:center; }
+.section h2 { font-size:28px; margin-bottom:20px; }
+.grey { background:#f5f7fa; }
+.about-content { max-width:800px; margin:0 auto; text-align:center; }
+.stats { display:flex; justify-content:center; gap:40px; margin-top:30px; }
+.stats div strong { font-size:28px; display:block; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; margin-top:30px; }
+.card { background:#fff; padding:25px; border-radius:8px; box-shadow:0 6px 15px rgba(0,0,0,0.08); font-weight:600; }
+.card small { display:block; margin-top:5px; color:#555; font-weight:normal; }
+form { max-width:600px; margin:auto; display:grid; gap:15px; }
+input, select, textarea { padding:12px; border:1px solid #ccc; border-radius:4px; width:100%; }
+textarea { min-height:100px; }
+button { padding:12px; background:#0a2540; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+button:hover { background:#103f6e; }
+.footer { background:#0a2540; color:#fff; padding:30px 40px; text-align:center; }
+.footer a { color:#f4b400; text-decoration:none; }
+#formMsg { margin-top:15px; font-weight:bold; }
+.fab { position:fixed; right:20px; z-index:999; margin-bottom:10px; }
+.fab img { width:50px; height:50px; }
+.fab.facebook { bottom:80px; }
+.fab.whatsapp { bottom:20px; }
