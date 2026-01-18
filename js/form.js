@@ -1,4 +1,5 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbxP_S2WCzLUz3PXKFX5pXFsARmAONM3simdeaDtOyPFfb0z06-8dd3ShHOry7d5IKL0PA/exec";
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbxP_S2WCzLUz3PXKFX5pXFsARmAONM3simdeaDtOyPFfb0z06-8dd3ShHOry7d5IKL0PA/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
@@ -9,21 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    msg.style.color = "#000";
     msg.innerText = "Submitting...";
 
     fetch(scriptURL, {
       method: "POST",
-      body: new FormData(form)
+      body: new FormData(form),
     })
-    .then(() => {
-      msg.style.color = "green";
-      msg.innerText = "Thank you for contacting us. We will connect you shortly.";
-      form.reset();
-      setTimeout(() => msg.innerText = "", 5000);
-    })
-    .catch(() => {
-      msg.style.color = "red";
-      msg.innerText = "Error submitting form. Please try again.";
-    });
+      .then(() => {
+        msg.style.color = "green";
+        msg.innerText =
+          "Thank you for contacting us. We will connect you shortly.";
+        form.reset();
+        setTimeout(() => (msg.innerText = ""), 5000);
+      })
+      .catch(() => {
+        msg.style.color = "red";
+        msg.innerText = "Error submitting form. Please try again.";
+      });
   });
 });
